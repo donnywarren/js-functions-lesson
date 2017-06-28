@@ -129,7 +129,7 @@ A **function expression** defines a function by producing a value that's stored 
 
 This is similar to the way an expression produces a value that's stored in a variable—hence its name.
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4421/Slide-19.svg)
+![](./images/img1.svg)
 
 
 Have you ever tried to move forward to the next page of an online form, only to be greeted by an alert that says "Please fill out all the required fields"?
