@@ -136,7 +136,7 @@ Have you ever tried to move forward to the next page of an online form, only to 
 
 This kind of code can be placed in a function and this function can be called anytime the user hasn't filled out a field on any form on the site. Let's code for this popup alert using a function expression:
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/5049/code_block_1.png)
+![](./images/code_block_1.png)
 
 
 Let's take a look at the function in more detail:
