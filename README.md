@@ -142,20 +142,20 @@ This kind of code can be placed in a function and this function can be called an
 Let's take a look at the function in more detail:
 
   1. The first line begins by declaring a variable called `errorAlert`. This is the name that we can then use to call that function.
-  ![](http://circuits-assets.generalassemb.ly/prod/asset/5050/code_block_2.png)
+  ![](./images/code_block_2.png)
   2. This is followed by the word `function`, which is a keyword we use to let JS know that we are creating a function.
-  ![](http://circuits-assets.generalassemb.ly/prod/asset/5052/code_block_3.png)
+  ![](./images/code_block_3.png)
   3. Next, you have a list of parameters surrounded by parentheses. Even though the parameters that can go within the parentheses are optional, the parentheses themselves are _always_ required.
-  ![](http://circuits-assets.generalassemb.ly/prod/asset/5053/code_block_4.png)
+  ![](./images/code_block_4.png)
   4. The statements inside the function will run every time the function is called. The function body must always be wrapped in curly braces `{ }`, even when it consists of only a single statement.
-  ![](http://circuits-assets.generalassemb.ly/prod/asset/5054/code_block_5.png)
+  ![](./images/code_block_5.png)
 
 #### Naming Conventions
 Now that we've learned about function expressions, let's discuss naming conventions.
 
 You may have noticed how we capitalize names in JavaScript using the camelCase style.
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4427/Slide-25-Camel.svg" width="350px">
+<img src="./images/Slide-25-Camel.png" width="350px">
 
 Let's take a quick look at some good and bad examples of function names, and what can cause them to break down:
 
@@ -195,16 +195,16 @@ Let's write a function that calculates the area of a rectangle.
 We need to provide our `area` function with a width and a length so we won't need to create a separate function every time we want to measure the dimensions of a new room.
 
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4432/Slide-9-Parameter.svg)
+![](./images/Slide-9-Parameter.png)
 
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4433/Slide-10-Width-Length.svg)
+![](./images/Slide-10-Width-Length.png)
 
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4435/Slide-11-Arguments.svg)
+![](./images/Slide-11-Arguments.png)
 
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4436/Slide-12-Arguments.svg)
+![](./images/Slide-12-Arguments.png)
 
 To write functions with more than one parameter, use a comma separated list:
 
@@ -325,7 +325,7 @@ As you can see, a function declaration always has:
 *   A descriptive name that refers to the function (this can be anything you want, as long as it's in camelCase).
 *   An optional list of parameters surrounded by parentheses.
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4535/Slide-9-Function-Declaration-New.svg" width="400px">
+<img src="./images/Slide-9-Function-Declaration-New.png" width="400px">
 
 What's the difference between them? It all comes down to something called **hoisting**.
 
@@ -338,7 +338,7 @@ In other words, _you can call a function declaration before defining it_.
 
 Let's look at an example of hoisting:
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/5022/Slide-13-Hoisting-Chart.svg)
+![](./images/Slide-13-Hoisting-Chart.png)
 
 #### Real-world Developers
 Now that you're familiar with both ways of declaring and assigning functions, you can choose which one works best for you.
@@ -377,6 +377,10 @@ Where else have we passed a function as an argument?
   console.log(`num: ${x}`)
 });
 ```
+
+## Objects and Functions
+
+TODO
 
 ## Math Lab (1 hour)
 
