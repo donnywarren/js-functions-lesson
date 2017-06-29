@@ -1,5 +1,7 @@
-// Lab 4: Create a Math object, and add the following methods. Once you are done, you can continue with other methods of your choice.
-// Required: add, subtract, multiply, divide, absolute value.
+// Lab: Create a Math object, and add the following methods.
+// Once you are done, you can continue with other methods of your choice.
+// Required: add, subtract, multiply, divide, absolute value
+// Optional: implement additional math functions
 
 //HINT: Here is starter code for absolute value
 function abs(x){

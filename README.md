@@ -14,7 +14,9 @@ creator:
 *After this lesson, you will be able to:*
 - Give the definition of a function
 - Identify the parts of a function
-- Write a function
+- Differentiate between function expression and declaration
+- Define a function in an object
+- Pass a function as a parameter
 
 ## Opening (5 mins)
 
@@ -349,6 +351,41 @@ Let's watch a [video](https://generalassembly.wistia.com/medias/exsv54zfg9) on h
 
 Functions in JavaScript are often referred to as 'first-class citizens'. What that means, essentially, is that anything you can do to regular values and datatypes, you can do to functions. Talk to your neighbor for 5 minutes and see if you can think of something that we can do with other datatypes that we haven't had an example for yet for functions.
 
+
+## Objects and Functions
+
+One of the common uses for functions are being included in an object.
+
+The syntax looks like this:
+
+```js
+var someObject = {
+  someProperty: true,
+  someFunction: function(){
+    console.log('do something')
+  }
+}
+
+someObject.someFunction();
+```
+
+It looks just like our objects from previous lessons, but the value is a function.
+
+Let's make an object that holds information for a bank account.
+
+```js
+var myBankAccount = {
+  number: 12345,
+  firstName: 'Drew',
+  lastName: 'Mahrt',
+  address: '123 Main St.',
+  balance: 4325.25,
+  withdraw: function(x){
+    this.balance -= x;
+  }
+}
+```
+
 ## Passing Functions as Arguments
 
 We can also pass functions as arguments.
@@ -378,9 +415,7 @@ Where else have we passed a function as an argument?
 });
 ```
 
-## Objects and Functions
-
-TODO
+How can we move the function outside of the forEach call?
 
 ## Math Lab (1 hour)
 
