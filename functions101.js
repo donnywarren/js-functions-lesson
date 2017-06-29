@@ -1,4 +1,4 @@
-// Lab 1: DRY!
+// DRY!
 // Exercise 1:
 // Refactor this code into a reusable function
 
@@ -25,8 +25,10 @@ console.log(`20% tip: $${(total * .20).toFixed(2)}`)
 
 // Exercise 2:
 //   1.  Write a function `areaCircle` that takes 1 parameter, a circle's radius.
-//   2.  Within the function:
-//    *   Log `Math.PI * r * r` to the console.
+//   2.  Within the function, log `Math.PI * r * r` to the console.
 //   4.  Call the `areaCircle` function.
-//   5.  Check your console to make sure the correct value is displayed.
-//
+
+
+// Exercise 3:
+// Write a function that converts temperature from fahrenheit to celsius.
+// Call the function to test it.
