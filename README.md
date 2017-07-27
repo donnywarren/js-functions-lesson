@@ -246,7 +246,7 @@ var students = ['issac', 'fernando', 'yarden', 'john', 'lenora', 'stephanie', 'g
   e.g. passing this function `1, 2, 3` should give you back the answer to `(1 * 2)^3`
 
 
-Bonus Functions:
+Bonus Functions!
 1. Write a function that prints every EVEN number between 1 and 100
 2. Recreate the Fibonacci sequence between 1 and 20. If you don't know what that is, Google is your best friend!
 
@@ -351,7 +351,9 @@ What's the difference between them? It all comes down to something called **hois
 
 #### Scope
 Scope is the space of computer memory where any given variable lives.
+
 If I define a variable _globally,_ that is to say, outside of any function, my entire program (and any functions I write in it) have access to that variable, and any function I write can manipulate it.
+
 However, scope only flows _downward._ That is to say, functions can only see variables that have been defined within their scope or above them, so trying to access a variable defined in one function by calling another will throw an un error
 
 #### Hoisting
