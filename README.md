@@ -230,7 +230,25 @@ greetUser('Bruce', 'Wayne', 1939, 'Gotham');
 
 The code in a function will not run when the function is defined. The code will only run when the function is called.
 
-## Exercise: write some functions! Check out functions101.js (20 mins)
+## Exercise:
+1. write a function that console.logs 'Hello World'
+2. write a function that console.logs whatever you want it to say
+3. write a function that prints every number between 1 and 100
+4. write a function that takes an array of numbers as a parameter and adds each element of that array to a counter
+5. Write a function that loops over an array of students in our class and prints out their name and what class they are currently in.
+```js
+var students = ['issac', 'fernando', 'yarden', 'john', 'lenora', 'stephanie', 'gary', 'manuel', 'daniel', 'kevin', 'michael', 'nital', 'amisha', 'deniz']
+```
+6. Write a function that takes an array of strings as a parameter and returns an array of numbers corresponding to the lengths of each word.
+  e.g. passing this function an array `['i', 'am', 'the', 'best']` should give you back `[1, 2, 3, 4]`
+  Hint: you can call .length on a string!
+7. Write a function that takes 3 parameters and returns one number, which is the product of the first two numbers raised to the power of the third.
+  e.g. passing this function `1, 2, 3` should give you back the answer to `(1 * 2)^3`
+
+
+Bonus Functions:
+1. Write a function that prints every EVEN number between 1 and 100
+2. Recreate the Fibonacci sequence between 1 and 20. If you don't know what that is, Google is your best friend!
 
 ---
 <a name="return-values"></a>
@@ -331,6 +349,11 @@ As you can see, a function declaration always has:
 
 What's the difference between them? It all comes down to something called **hoisting**.
 
+#### Scope
+Scope is the space of computer memory where any given variable lives.
+If I define a variable _globally,_ that is to say, outside of any function, my entire program (and any functions I write in it) have access to that variable, and any function I write can manipulate it.
+However, scope only flows _downward._ That is to say, functions can only see variables that have been defined within their scope or above them, so trying to access a variable defined in one function by calling another will throw an un error
+
 #### Hoisting
 Right now, let's dive deeper into the differences between function declarations and function expressions. While both methods are similar, one of their main differences is the concept of **hoisting**.
 
@@ -351,75 +374,6 @@ Let's watch a [video](https://generalassembly.wistia.com/medias/exsv54zfg9) on h
 
 Functions in JavaScript are often referred to as 'first-class citizens'. What that means, essentially, is that anything you can do to regular values and datatypes, you can do to functions. Talk to your neighbor for 5 minutes and see if you can think of something that we can do with other datatypes that we haven't had an example for yet for functions.
 
-
-## Objects and Functions
-
-One of the common uses for functions are being included in an object.
-
-The syntax looks like this:
-
-```js
-var someObject = {
-  someProperty: true,
-  someFunction: function(){
-    console.log('do something')
-  }
-}
-
-someObject.someFunction();
-```
-
-It looks just like our objects from previous lessons, but the value is a function.
-
-Let's make an object that holds information for a bank account.
-
-```js
-var myBankAccount = {
-  number: 12345,
-  firstName: 'Drew',
-  lastName: 'Mahrt',
-  address: '123 Main St.',
-  balance: 4325.25,
-  withdraw: function(x){
-    this.balance -= x;
-  }
-}
-```
-
-## Passing Functions as Arguments
-
-We can also pass functions as arguments.
-
-We will see this very often when we talk about DOM Manipulation soon, but here is a preview.
-
-```js
-function showWarning() {
-  console.log("Warning!");
-}
-
-document.getElementById("big-red-button")
-button.addEventListener("click", showWarning);
-
-// or
-document.getElementById("big-red-button")
-button.addEventListener("click", function() {
-  console.log("Warning!");
-});
-```
-
-Where else have we passed a function as an argument?
-
-```js
-[1,2,3].forEach(function(x){
-  console.log(`num: ${x}`)
-});
-```
-
-How can we move the function outside of the forEach call?
-
-## Math Lab (1 hour)
-
-Open MathLab.js and complete it.
 
 ## Conclusion (5 mins)
 
