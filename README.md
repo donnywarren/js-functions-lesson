@@ -57,7 +57,7 @@ const year1 = 1998;
 console.log(`${movie1} was released in ${year1}`);
 
 const movie2 = 'Interstellar';
-const year = 2014;
+const year2 = 2014;
 console.log(`${movie2} was released in ${year2}`);
 
 const movie3 = 'Jason Bourne';
