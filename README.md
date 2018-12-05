@@ -203,7 +203,7 @@ e.g., (parameter1, parameter2, parameter3, parameter4, etc.)
 Here is an example of a function with four strings as parameters:
 
 ```js
-const greetUser constunction(firstName, lastName, year, city) {
+const greetUser = (firstName, lastName, year, city) {
   console.log(
     'Hello ' +
       firstName +
@@ -285,7 +285,7 @@ Sometimes we don't necessarily want to show or log something immediately to the 
 
 Instead, we might just want to update a variable within a function, or even call another function without showing its effects.
 
-To do this, we use constreturn` statement.
+To do this, we use `return` statement.
 
 Let's look at an example of updating a variable within a function.
 
@@ -305,7 +305,7 @@ We can then store this returned value in another variable.
 
 #### Exiting a function
 
-We can also use `return;` by itself as a way to constt the function and prevent any code conster it from running.
+We can also use `return;` by itself as a way to stop the function and prevent any code after it from running.
 
 Take a look at this example:
 
