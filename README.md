@@ -237,7 +237,7 @@ The code in a function will not run when the function is defined. The code will 
 5.  Write a function that loops over an array of students in our class and prints out their name and what class they are currently in.
 
 ```js
-let students = [
+const students = [
   'Alice',
   'Andrew',
   'Casey',
@@ -290,7 +290,7 @@ To do this, we use `return` statement.
 Let's look at an example of updating a variable within a function.
 
 ```js
-let doubleValue = function(x) {
+const doubleValue = function(x) {
   return x * 2;
 };
 ```
@@ -347,7 +347,7 @@ Remember the `printMovie()` function?
 Let's take a look at how we could rewrite that function aconst **Function declaration** by changing the way we declare the function (the bottom example).
 
 ```js
-let printMovie = function(movie, year) {
+const printMovie = function(movie, year) {
   console.log(`${movie} was released in ${year}`);
 };
 ```
