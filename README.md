@@ -57,7 +57,7 @@ const year1 = 1998;
 console.log(`${movie1} was released in ${year1}`);
 
 const movie2 = 'Interstellar';
-const year = 2014;
+const year2 = 2014;
 console.log(`${movie2} was released in ${year2}`);
 
 const movie3 = 'Jason Bourne';
@@ -243,10 +243,10 @@ The code in a function will not run when the function is defined. The code will 
 
 ## Exercise:
 
-1.  write a function that console.logs 'Hello World'
-2.  write a function that console.logs whatever you want it to say
-3.  write a function that prints every number between 1 and 100
-4.  write a function that takes an array of numbers as a parameter and adds each element of that array to a counter
+1.  Write a function that console.logs 'Hello World'
+2.  Write a function that console.logs whatever you want it to say
+3.  Write a function that prints every number between 1 and 100
+4.  Write a function that takes an array of numbers as a parameter and adds each element of that array to a counter
 5.  Write a function that loops over an array of students in our class and prints out their name and what class they are currently in.
 
 ```js
