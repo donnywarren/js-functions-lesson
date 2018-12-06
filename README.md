@@ -121,24 +121,31 @@ A **function expression** defines a function by producing a value that's stored 
 
 This is similar to the way an expression produces a value that's stored in a variable—hence its name.
 
-![func breakdown](./images/img1.png)
+```js
+const pickADescriptiveName = function() {
+  // code block
+}
+// 'pickADescriptiveName' is the function name
+// 'function' is the keyword that declares a function
+// parentheses is needed an can have optional parameters
+```
 
 Have you ever tried to move forward to the next page of an online form, only to be greeted by an alert that says "Please fill out all the required fields"?
 
 This kind of code can be placed in a function and this function can be called anytime the user hasn't filled out a field on any form on the site. Let's code for this popup alert using a function expression:
 
-![](./images/code_block_1.png)
+```js
+const errorAlert = function() {
+  alert('Please be sure to fill out all required fields');
+}
+```
 
 Let's take a look at the function in more detail:
 
 1.  The first line begins by declaring a variable called `errorAlert`. This is the name that we can then use to call that function.
-    ![](./images/code_block_2.png)
 2.  This is followed by the word `function`, which is a keyword we use to let JS know that we are creating a function.
-    ![](./images/code_block_3.png)
 3.  Next, you have a list of parameters surrounded by parentheses. Even though the parameters that can go within the parentheses are optional, the parentheses themselves are _always_ required.
-    ![](./images/code_block_4.png)
 4.  The statements inside the function will run every time the function is called. The function body must always be wrapped in curly braces `{ }`, even when it consists of only a single statement.
-    ![](./images/code_block_5.png)
 
 #### Naming Conventions
 
@@ -188,13 +195,19 @@ Let's write a function that calculates the area of a rectangle.
 
 We need to provide our `area` function with a width and a length so we won't need to create a separate function every time we want to measure the dimensions of a new room.
 
-![](./images/Slide-9-Parameter.png)
+```js
+const area = function(width, length) {
+  console.log(width * length);
+}
 
-![](./images/Slide-10-Width-Length.png)
+area(5, 3); // 15
+area(12, 16); // 192
 
-![](./images/Slide-11-Arguments.png)
+```
 
-![](./images/Slide-12-Arguments.png)
+1. Width and length are our parameters. Note that they are in a comma separated list. This tells our function that we are going to give it a width and a length.
+2. There is nothing special about the words `width` and `length` here. These are just descriptive names to remember what information that is being given to our function. We could use other names as well i.e. `width` and `height`, `l` and `w`, etc
+3. When the name of the function is followed by `()` the function is being called. By passing comma separated values in between the parentheses (i.e. arguments) correlate to the name of the parameters when the function was declared. Ex: `5` relates to `width` and `3` relates to `length`. Note that the order does matter.
 
 To write functions with more than one parameter, use a comma separated list:
 
@@ -370,7 +383,11 @@ As you can see, a function declaration always has:
 - A descriptive name that refers to the function (this can be anything you want, as long as it's in camelCase).
 - An optional list of parameters surrounded by parentheses.
 
-<img src="./images/Slide-9-Function-Declaration-New.png" width="400px">
+```js
+function pickADescriptiveName() {
+  // code block
+}
+```
 
 What's the difference between them? It all comes down to something called **hoisting**.
 
@@ -392,7 +409,27 @@ In other words, _you can call a function declaration before defining it_.
 
 Let's look at an example of hoisting:
 
-![](./images/Slide-13-Hoisting-Chart.png)
+```js
+sayHello()
+
+function sayHello() {
+  console.log('hey')
+}
+
+// works great!!
+```
+
+```js
+sayHello()
+
+const sayHello = function() {
+  console.log('hey')
+}
+
+// ERROR: What's sayHello??
+```
+
+Function expressions must be defined before they are called. The function is not processed until the interpreter gets to that statement. We have to wait for the interpreter to reach that line, otherwise we will get an error.
 
 #### Real-world Developers
 
