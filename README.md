@@ -357,7 +357,7 @@ Watch this short [video](https://generalassembly.wistia.com/medias/g1w03wkvth) f
 
 Remember the `printMovie()` function?
 
-Let's take a look at how we could rewrite that function aconst **Function declaration** by changing the way we declare the function (the bottom example).
+Let's take a look at how we could rewrite that function by changing the way we declare the function (the bottom example).
 
 ```js
 const printMovie = function(movie, year) {
