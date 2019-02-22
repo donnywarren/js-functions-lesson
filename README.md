@@ -216,7 +216,7 @@ e.g., (parameter1, parameter2, parameter3, parameter4, etc.)
 Here is an example of a function with four strings as parameters:
 
 ```js
-const greetUser = (firstName, lastName, year, city) {
+const greetUser = function(firstName, lastName, year, city) {
   console.log(
     'Hello ' +
       firstName +
