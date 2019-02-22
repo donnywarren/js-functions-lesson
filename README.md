@@ -10,7 +10,7 @@ _After this lesson, you will be able to:_
 - Define a function in an object
 - Pass a function as a parameter
 
-## Opening (5 mins)
+## Opening
 
 **Function** is a term that comes out of mathematics. You may remember hearing it in your high school algebra class.
 
@@ -431,16 +431,10 @@ const sayHello = function() {
 
 Function expressions must be defined before they are called. The function is not processed until the interpreter gets to that statement. We have to wait for the interpreter to reach that line, otherwise we will get an error.
 
-#### Real-world Developers
-
-Now that you're familiar with both ways of declaring and assigning functions, you can choose which one works best for you.
-
-Let's watch a [video](https://generalassembly.wistia.com/medias/exsv54zfg9) on how programmers choose their favorite method.
-
 ## First-class citizens!
 
-Functions in JavaScript are often referred to as 'first-class citizens'. What that means, essentially, is that anything you can do to regular values and datatypes, you can do to functions. Talk to your neighbor for 5 minutes and see if you can think of something that we can do with other datatypes that we haven't had an example for yet for functions.
+Functions in JavaScript are often referred to as 'first-class citizens'. What that means, essentially, is that anything you can do to regular values and datatypes, you can do to functions.
 
-## Conclusion (5 mins)
+## Conclusion
 
 Functions are very important in JavaScript, and you must have a thorough understanding of how to define them, as well as how you can use them.
