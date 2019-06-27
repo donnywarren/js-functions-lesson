@@ -248,7 +248,7 @@ The code in a function will not run when the function is defined. The code will 
 1.  Write a function that console.logs 'Hello World'
 2.  Write a function that console.logs whatever you want it to say
 3.  Write a function that prints every number between 1 and 100
-4.  Write a function that takes an array of numbers as a parameter and adds each element of that array to a counter and prints the final value of the counter.
+4.  Write a function that takes an array of numbers as a parameter and adds each element of that array to a counter and prints the final value of the counter (i.e. the sum of all of the numbers in the array).
 5.  Write a function that loops over the following array of WDI students and prints out their name and what class they are currently in.
 
 ```js
