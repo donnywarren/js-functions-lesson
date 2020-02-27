@@ -433,10 +433,6 @@ const sayHello = function() {
 
 Function expressions must be defined before they are called. The function is not processed until the interpreter gets to that statement. We have to wait for the interpreter to reach that line, otherwise we will get an error.
 
-## First-class citizens!
-
-Functions in JavaScript are often referred to as 'first-class citizens'. What that means, essentially, is that anything you can do to regular values and datatypes, you can do to functions.
-
 ## Conclusion
 
 Functions are very important in JavaScript, and you must have a thorough understanding of how to define them, as well as how you can use them.
